@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [data, setData] = useState(false);
+  const [data, setData] = useState("loading");
   const [currentArticle, setCurrentArticle] = useState(0);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Home() {
           <main className={`${styles.main}`}>
             <div>
               <h3 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
-              <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{data[currentArticle].title}</h1>
+              <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{data === undefined?"Loading":`${data[0].title}`}</h1>
               <section className={styles.section}>
                 <Image
                   src={DiamondImage}
