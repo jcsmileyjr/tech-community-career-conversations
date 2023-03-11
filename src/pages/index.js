@@ -17,11 +17,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-          <section className={styles.section}>
-            <h3 class={styles.appTitle}>Tech Community Conversations</h3>
-            <h1>4 Tips on Telling Your Story in an Interview</h1>
-            <div>
+      <div className={styles.page}>
+          <main className={`${styles.main}`}>
+            <h3 class={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
+            <h1 class={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>4 Tips on Telling Your Story in an Interview</h1>
+            <section className={styles.section}>
               <Image
                 src={DiamondImage}
                 alt="Vercel Logo"
@@ -30,13 +30,13 @@ export default function Home() {
                 height={16}
                 priority
               />
-              <ul>
-                <li>Clap Clap</li>
-                <p>If you are happy and you know it clap your feet</p>
+              <ul className={styles.content}>
+                <li className={`${styles.contentTitle} ${styles.primaryTextColorBold}`}>Code Daily</li>
+                <p className={`${styles.contentText} ${styles.primaryTextColorLight}`}>The number one way to learn anything is to practice frequently.</p>
               </ul>
-            </div>
-            <div class="footer">
-              <div>
+            </section>
+            <div class={styles.footer}>
+              <div className={styles.footerDirections}>
                 <Image 
                   src={PreviousArrow} 
                   alt="Left Arrow"
@@ -47,7 +47,7 @@ export default function Home() {
                 />
                 <p>Previous</p>
               </div>
-              <div>
+              <div className={styles.footerDirections}>
                 <Image 
                   src={NextArrow} 
                   alt="Right Arrow"
@@ -56,11 +56,11 @@ export default function Home() {
                   height={16}
                   priority
                 />
-                <p>Next</p>
+                <p className={styles.footerArrowTitle}>Next</p>
               </div>              
             </div>
-          </section>
-      </main>
+          </main>
+      </div>
     </>
   )
 }

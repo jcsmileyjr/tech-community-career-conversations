@@ -1,5 +1,5 @@
 /*Mobile first specs*/
-.main {
+.page {
   background-color: #74B3CE;
   display: flex;
   flex-direction: column;
@@ -9,11 +9,58 @@
   min-height: 100vh;
 }
 
-.section {
+.main {
   border: 1px solid #707070;
   background-color: white;
+  padding: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
 }
 
 .appTitle{
   text-align: center;
 }
+
+.pageTitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 5px;
+}
+
+.contentText {
+  margin-top: 5px;
+}
+
+.primaryTextColorBold {
+  color: #004346;
+  font-weight: bold;
+}
+
+.primaryTextColorLight{
+  color: #004346;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerDirections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerArrowTitle {
+  margin-top: 5px;
+}
+
