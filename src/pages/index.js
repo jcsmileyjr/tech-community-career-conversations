@@ -5,10 +5,25 @@ import styles from '@/styles/Home.module.css'
 import DiamondImage from '../assets/diamond-icon-blue.png'
 import PreviousArrow from '../assets/PolygonLeft.png'
 import NextArrow from '../assets/PolygonRight.png'
+//import fetch from 'node-fetch';
+import { useState, useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [data, setData] = useState(false);
+  const [currentArticle, setCurrentArticle] = useState(0);
+
+  useEffect(() => {
+    fetch('/api/hello')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        console.log(data[0].title)
+        console.log(currentArticle)
+      })
+  }, []);
+  
   return (
     <>
       <Head>
@@ -20,8 +35,8 @@ export default function Home() {
       <div className={styles.page}>
           <main className={`${styles.main}`}>
             <div>
-              <h3 class={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
-              <h1 class={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>4 Tips on Telling Your Story in an Interview</h1>
+              <h3 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
+              <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{data[currentArticle].title}</h1>
               <section className={styles.section}>
                 <Image
                   src={DiamondImage}

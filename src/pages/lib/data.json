@@ -1,44 +1,42 @@
 [
     {
-        "title":"abc",
+        "title":"Tips for learning Deliberately",
+        "intro":"",
         "listOfBulletPoints":[
             {
-                "title":"a",
-                "bulletContent":"a is for Apple"
+                "title":"Code Daily",
+                "bulletContent":"The number one way to learn anything is to practice frequently. "
             },
             {
-                "title":"b",
-                "bulletContent":"b is for Bear"
+                "title":"Code with Intent, Have a Plan of Action",
+                "bulletContent":"Intent means planning what you will be coding and what is the end result so you are not wasting time wondering what is next. "
             },
             {
-                "title":"c",
-                "bulletContent":"c is for Cat"
-            },
-            {
-                "title":"d",
-                "bulletContent":"d is for Dog"
+                "title":"Iterate, Iterate, Iterate. ",
+                "bulletContent":"Refactor or rebuild something you have done in the past helps cement what you learned in your mind and practice writing good clean efficient code."
             }
         ],
         "isfeature": true
     },
     {
-        "title":"def",
+        "title":"You are only as great as your support system",
+        "intro":"When I was raising cucumbers, I learned it's best to scaffold a trellis to support the long vines and growing buds. I harvested more cucumbers and they were bigger. The correlation is your career needs support to grow. Success does not happen in a vacuum. You need:",
         "listOfBulletPoints":[
             {
-                "title":"a",
-                "bulletContent":"a is for Apple"
+                "title":"Mentors",
+                "bulletContent":""
             },
             {
-                "title":"b",
-                "bulletContent":"b is for Bear"
+                "title":"Coding buddies to listen as you 'rubber duck' problems",
+                "bulletContent":""
             },
             {
-                "title":"c",
-                "bulletContent":"c is for Cat"
+                "title":"Mock interviewers & resume reviewers",
+                "bulletContent":""
             },
             {
-                "title":"d",
-                "bulletContent":"d is for Dog"
+                "title":"Supporters to help you find a job and even more important; to speak good about you when you are not in the room.",
+                "bulletContent":""
             }
         ],
         "isfeature": false
