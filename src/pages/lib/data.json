@@ -1,0 +1,46 @@
+[
+    {
+        "title":"abc",
+        "listOfBulletPoints":[
+            {
+                "title":"a",
+                "bulletContent":"a is for Apple"
+            },
+            {
+                "title":"b",
+                "bulletContent":"b is for Bear"
+            },
+            {
+                "title":"c",
+                "bulletContent":"c is for Cat"
+            },
+            {
+                "title":"d",
+                "bulletContent":"d is for Dog"
+            }
+        ],
+        "isfeature": true
+    },
+    {
+        "title":"def",
+        "listOfBulletPoints":[
+            {
+                "title":"a",
+                "bulletContent":"a is for Apple"
+            },
+            {
+                "title":"b",
+                "bulletContent":"b is for Bear"
+            },
+            {
+                "title":"c",
+                "bulletContent":"c is for Cat"
+            },
+            {
+                "title":"d",
+                "bulletContent":"d is for Dog"
+            }
+        ],
+        "isfeature": false
+    }
+]
