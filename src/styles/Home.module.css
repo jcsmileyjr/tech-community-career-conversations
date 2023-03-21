@@ -34,8 +34,12 @@
 }
 
 .content {
-  margin-left: 5px;
+  margin: 0 5px;
   font-size: 1.25rem;
+}
+
+.introText {
+  margin-bottom:15px;
 }
 
 .bullet {
