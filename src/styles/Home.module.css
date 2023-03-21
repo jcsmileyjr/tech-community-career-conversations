@@ -41,8 +41,13 @@
   font-size: 1.25rem;
 }
 
+.contentTitle {
+  list-style-type: none;
+}
+
 .contentText {
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .primaryTextColorBold {
