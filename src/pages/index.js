@@ -11,16 +11,17 @@ import { useState, useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [data, setData] = useState("loading");
+  const [content, setContent] = useState("loading");
   const [currentArticle, setCurrentArticle] = useState(0);
-
+  const testArray = ["a", "b", "c"];
+  const currentList = content[currentArticle]
   useEffect(() => {
     fetch('/api/hello')
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
-        console.log(data[0].title)
-        console.log(currentArticle)
+        setContent(data);
+        console.log(content[0].title)
+        console.log(content[0].listOfBulletPoints)
       })
   }, []);
   
@@ -36,7 +37,7 @@ export default function Home() {
           <main className={`${styles.main}`}>
             <div>
               <h3 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
-              <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{data === undefined?"Loading":`${data[0].title}`}</h1>
+              <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{content[currentArticle].title}</h1>
               <section className={styles.section}>
                 <Image
                   src={DiamondImage}
@@ -46,13 +47,25 @@ export default function Home() {
                   height={16}
                   priority
                 />
-                <ul className={styles.content}>
-                  <li className={`${styles.contentTitle} ${styles.primaryTextColorBold}`}>Code Daily</li>
-                  <p className={`${styles.contentText} ${styles.primaryTextColorLight}`}>The number one way to learn anything is to practice frequently.</p>
-                </ul>
+                {content === 'loading' &&
+                    <p>loading</p>
+                }
+
+                {content !== 'loading' &&
+                  <ul className={styles.content}>
+                  {content[currentArticle].listOfBulletPoints.map((bulletpoint) => (
+                    <>
+                      <li className={`${styles.contentTitle} ${styles.primaryTextColorBold}`}>{bulletpoint.title}</li>
+                      <p className={`${styles.contentText} ${styles.primaryTextColorLight}`}>{bulletpoint.bulletContent}</p>
+                    </>
+                  ))
+                  }
+                  </ul>
+
+                }
               </section>
             </div>
-            <footer class={styles.footer}>
+            <footer className={styles.footer}>
               <div className={styles.footerDirections}>
                 <Image 
                   src={PreviousArrow} 
