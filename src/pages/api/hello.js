@@ -2,6 +2,5 @@
 import TestData from '../lib/data.json';
 
 export default function handler(req, res) {
-  console.log(`Test data: `, TestData)
   res.status(200).json(TestData)
 }

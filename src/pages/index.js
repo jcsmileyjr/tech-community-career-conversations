@@ -8,20 +8,15 @@ import NextArrow from '../assets/PolygonRight.png'
 //import fetch from 'node-fetch';
 import { useState, useEffect } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   const [content, setContent] = useState("loading");
   const [currentArticle, setCurrentArticle] = useState(0);
-  const testArray = ["a", "b", "c"];
-  const currentList = content[currentArticle]
+
   useEffect(() => {
     fetch('/api/hello')
       .then((res) => res.json())
       .then((data) => {
         setContent(data);
-        console.log(content[0].title)
-        console.log(content[0].listOfBulletPoints)
       })
   }, []);
   
