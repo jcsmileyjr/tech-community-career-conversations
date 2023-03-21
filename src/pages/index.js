@@ -39,14 +39,6 @@ export default function Home() {
               <h3 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
               <h1 className={`${styles.primaryTextColorBold} ${styles.pageTitle}`}>{content[currentArticle].title}</h1>
               <section className={styles.section}>
-                <Image
-                  src={DiamondImage}
-                  alt="Vercel Logo"
-                  className={""}
-                  width={25}
-                  height={16}
-                  priority
-                />
                 {content === 'loading' &&
                     <p>loading</p>
                 }
@@ -54,10 +46,23 @@ export default function Home() {
                 {content !== 'loading' &&
                   <ul className={styles.content}>
                   {content[currentArticle].listOfBulletPoints.map((bulletpoint) => (
-                    <>
-                      <li className={`${styles.contentTitle} ${styles.primaryTextColorBold}`}>{bulletpoint.title}</li>
-                      <p className={`${styles.contentText} ${styles.primaryTextColorLight}`}>{bulletpoint.bulletContent}</p>
-                    </>
+                    <div className={`${styles.bullet}`}>
+                      <div>
+                        <Image
+                          src={DiamondImage}
+                          alt="Vercel Logo"
+                          className={""}
+                          width={25}
+                          height={16}
+                          priority
+                        />
+
+                      </div>
+                      <div>
+                        <li className={`${styles.contentTitle} ${styles.primaryTextColorBold}`}>{bulletpoint.title}</li>
+                        <p className={`${styles.contentText} ${styles.primaryTextColorLight}`}>{bulletpoint.bulletContent}</p>
+                      </div>
+                    </div>
                   ))
                   }
                   </ul>

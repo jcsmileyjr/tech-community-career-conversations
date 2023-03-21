@@ -20,9 +20,6 @@
 }
 
 .section {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 0;
 }
 
 .appTitle{
@@ -39,6 +36,13 @@
 .content {
   margin-left: 5px;
   font-size: 1.25rem;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  gap: 10px;
 }
 
 .contentTitle {
