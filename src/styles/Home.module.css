@@ -83,6 +83,15 @@
   font-size: 1.25rem;
 }
 
+.footerMenuButton {
+  min-width: 30%;
+  background-color: #004346;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 1.25rem;
+}
+
 @media only screen and (min-width: 600px){
   .page {
     width: 30%;

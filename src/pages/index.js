@@ -98,6 +98,7 @@ export default function Home() {
                 />
                 <p className={`${styles.footerArrowTitle} ${styles.primaryTextColorBold}`}>Previous</p>
               </div>
+              <button type="button" className={styles.footerMenuButton}>MENU</button>
               <div className={styles.footerDirections} onClick={() => nextArticle()}>
                 <Image 
                   src={NextArrow} 
