@@ -1,0 +1,37 @@
+/*Mobile first specs*/
+.page {
+    background-color: #74B3CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.main {
+    border: 1px solid #707070;
+    background-color: white;
+    padding: 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.appTitle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.primaryTextColorBold {
+    color: #004346;
+    font-weight: bold;
+}
+
+/*Desktop view*/
+@media only screen and (min-width: 600px){
+    .page {
+      width: 30%;
+      margin: auto;
+    }
+  }

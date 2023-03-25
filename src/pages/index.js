@@ -6,6 +6,7 @@ import PreviousArrow from '../assets/PolygonLeft.png'
 import NextArrow from '../assets/PolygonRight.png'
 //import fetch from 'node-fetch';
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Home() {
   const [content, setContent] = useState("loading");
@@ -98,7 +99,9 @@ export default function Home() {
                 />
                 <p className={`${styles.footerArrowTitle} ${styles.primaryTextColorBold}`}>Previous</p>
               </div>
-              <button type="button" className={styles.footerMenuButton}>MENU</button>
+              <button type="button" className={styles.footerMenuButton}>
+                <Link href="/menu">MENU</Link>
+              </button>
               <div className={styles.footerDirections} onClick={() => nextArticle()}>
                 <Image 
                   src={NextArrow} 
