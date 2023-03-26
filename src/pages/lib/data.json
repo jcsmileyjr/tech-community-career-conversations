@@ -16,7 +16,8 @@
                 "bulletContent":"Refactor or rebuild something you have done in the past helps cement what you learned in your mind and practice writing good clean efficient code."
             }
         ],
-        "isfeature": true
+        "isfeature": true,
+        "articleID": 1
     },
     {
         "title":"You are only as great as your support system",
@@ -39,7 +40,8 @@
                 "bulletContent":""
             }
         ],
-        "isfeature": false
+        "isfeature": false,
+        "articleID": 2
     },
     {
         "title":"Don't underestimate the power of networking",
@@ -66,6 +68,7 @@
                 "bulletContent":""
             }
         ],
-        "isfeature": false
+        "isfeature": false,
+        "articleID": 3
     }
 ]

@@ -32,7 +32,7 @@ const Menu = () => {
                     }
 
                     {content !== 'loading' && content.map((article, index) => (
-                        <Link href="/" id={index} className={`${styles.articleLinks} ${styles.primaryTextColorBold}`}>{article.title}</Link>
+                        <Link href={`/${article.articleID}`} key={index} className={`${styles.articleLinks} ${styles.primaryTextColorBold}`}>{article.title} & {article.articleID}</Link>
                     ))
                     }
                 </main>
