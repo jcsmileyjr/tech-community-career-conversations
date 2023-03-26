@@ -82,32 +82,10 @@ const Article = (req, res) => {
                   }
                 </section>
               </div>
-              <footer className={styles.footer}>
-                <div className={styles.footerDirections} onClick={() => previousArticle()}>
-                  <Image 
-                    src={PreviousArrow} 
-                    alt="Left Arrow"
-                    className={""}
-                    width={30}
-                    height={30}
-                    priority
-                  />
-                  <p className={`${styles.footerArrowTitle} ${styles.primaryTextColorBold}`}>Previous</p>
-                </div>
+              <footer className={styles.footerArticle}>
                 <button type="button" className={styles.footerMenuButton}>
                   <Link href="/menu">MENU</Link>
-                </button>
-                <div className={styles.footerDirections} onClick={() => nextArticle()}>
-                  <Image 
-                    src={NextArrow} 
-                    alt="Right Arrow"
-                    className={""}
-                    width={30}
-                    height={30}
-                    priority
-                  />
-                  <p className={`${styles.footerArrowTitle} ${styles.primaryTextColorBold}`}>Next</p>
-                </div>              
+                </button>             
               </footer>
             </main>
         </div>

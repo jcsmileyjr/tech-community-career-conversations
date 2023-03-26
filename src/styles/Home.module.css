@@ -71,6 +71,13 @@
   justify-self: flex-end;
 }
 
+.footerArticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
 .footerDirections {
   display: flex;
   flex-direction: column;
@@ -90,6 +97,7 @@
   font-weight: bold;
   border-radius: 15px;
   font-size: 1.25rem;
+  min-height: 58px;
 }
 
 /*Desktop view*/
