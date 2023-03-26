@@ -40,5 +40,32 @@
             }
         ],
         "isfeature": false
+    },
+    {
+        "title":"Don't underestimate the power of networking",
+        "intro":"Job hunting can seem like a black hole sucking up every job application you submit. Networking can and should be an essential part of connecting your face, name, or reputation to a job application. Resources to use:",
+        "listOfBulletPoints":[
+            {
+                "title":"LinkedIn",
+                "bulletContent":""
+            },
+            {
+                "title":"Twitter",
+                "bulletContent":""
+            },
+            {
+                "title":"Tech meetups",
+                "bulletContent":""
+            },
+            {
+                "title":"Slack communities",
+                "bulletContent":""
+            },
+            {
+                "title":"Discord server communities",
+                "bulletContent":""
+            }
+        ],
+        "isfeature": false
     }
 ]
