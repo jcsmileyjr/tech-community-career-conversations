@@ -18,14 +18,26 @@
     /* justify-content: space-between; */
 }
 
-.appTitle{
+.appTitle {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.menuTitle {
+    text-decoration: underline;
+    font-weight:lighter;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004346;
 }
 
 .primaryTextColorBold {
     color: #004346;
     font-weight: bold;
+}
+
+.articleLinks {
+    margin-bottom: 10px;
 }
 
 /*Desktop view*/

@@ -14,7 +14,6 @@ const Menu = () => {
         })
     }, []);
 
-    console.log(content)
     return(
         <>
             <Head>
@@ -26,16 +25,15 @@ const Menu = () => {
             <div className={styles.page}>
                 <main className={styles.main}>
                     <h3 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>Tech Community Conversations</h3>
-                    <h2 className={`${styles.appTitle} ${styles.primaryTextColorBold}`}>List of Articles</h2>
+                    <h2 className={`${styles.menuTitle}`}>List of Articles</h2>
 
                     {content === 'loading' &&
                         <p>loading</p>
                     }
 
                     {content !== 'loading' && content.map((article, index) => (
-                        <Link href="/" id={index}>{article.title}</Link>
+                        <Link href="/" id={index} className={`${styles.articleLinks} ${styles.primaryTextColorBold}`}>{article.title}</Link>
                     ))
-
                     }
                 </main>
 
